@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, "Inter", "Courier New", Courier, monospace;
+  font-family: Inter, "Inter", "Arial", "Courier New", Courier, monospace;
 }
 
 *,
@@ -13,4 +13,25 @@
 
 body {
   background-color: #f0eaef;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  #root {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
 }

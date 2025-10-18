@@ -1,0 +1,111 @@
+.preview-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+
+/* Das "A4-Seitenverhältnis" */
+.preview-wrapper {
+  position: relative;
+  width: 55vh; /* proportional zur Höhe → behält Verhältnis */
+  aspect-ratio: 210 / 297; /* A4 Verhältnis */
+  transform-origin: top center;
+  background: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  font-size: 0.7rem;
+}
+
+.preview-header {
+  text-align: center;
+  border-bottom: 2px solid #333;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-header h1 {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.contact-info {
+  font-size: 0.5rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.preview-section {
+  margin-bottom: 1.5rem;
+}
+
+.preview-section h2 {
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+
+.preview-entry {
+  margin-bottom: 0.5rem;
+  font-size: 0.65rem;
+}
+
+.entry-title {
+  font-weight: bold;
+}
+
+.entry-duration {
+  font-size: 0.6rem;
+  color: #666;
+}
+
+.skills-list {
+  list-style: disc;
+  margin-left: 1.5rem;
+  font-size: 0.6rem;
+}
+
+@media (max-width: 1000px) {
+  .preview-wrapper {
+    width: 90vw;
+    padding: 1.5rem;
+  }
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 10px;
+}
+
+.preview-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.download-btn {
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #005fd1;
+}
